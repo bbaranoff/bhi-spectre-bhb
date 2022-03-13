@@ -19,13 +19,14 @@
 //An history size big enought that should work on any microarch
 #define MAX_HISTORY_SIZE    (256)
 
+//???
 #if   defined INTEL_8_GEN
 #define ARCH            (X64)
 #define HISTORY_SIZE    (29)
 // THR: use tools/fr_checker to find a good value
 #define THR             (60)
 #define STRIDE          (4096)
-#define PAGE_OFFSET     (0xffff988c80000000)
+#define PAGE_OFFSET     (0xffff988c80000000ULL)
 
 #elif   defined INTEL_10_GEN
 #define ARCH            (X64)
